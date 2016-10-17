@@ -15,16 +15,16 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AVOSCloud (3.5.1)
-  - AVOSCloudIM (3.5.1):
-    - AVOSCloud (= 3.5.1)
-    - AVOSCloudIM/_ARC (= 3.5.1)
-    - AVOSCloudIM/_NOARC (= 3.5.1)
-  - AVOSCloudIM/_ARC (3.5.1):
-    - AVOSCloud (= 3.5.1)
-    - AVOSCloudIM/_NOARC (= 3.5.1)
-  - AVOSCloudIM/_NOARC (3.5.1):
-    - AVOSCloud (= 3.5.1)
+  - AVOSCloud (3.5.0)
+  - AVOSCloudIM (3.5.0):
+    - AVOSCloud (= 3.5.0)
+    - AVOSCloudIM/_ARC (= 3.5.0)
+    - AVOSCloudIM/_NOARC (= 3.5.0)
+  - AVOSCloudIM/_ARC (3.5.0):
+    - AVOSCloud (= 3.5.0)
+    - AVOSCloudIM/_NOARC (= 3.5.0)
+  - AVOSCloudIM/_NOARC (3.5.0):
+    - AVOSCloud (= 3.5.0)
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
     - CocoaLumberjack/Extensions (= 2.0.3)
@@ -92,8 +92,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AVOSCloud: 3dfc202ae8c8b543e2332c0f019e08972c4092c0
-  AVOSCloudIM: a8a89cbdc9387079f6da7bd4f371c523086a7635
+  AVOSCloud: 827244bd0705df52b0b0d6bde8290daf6081bc63
+  AVOSCloudIM: 61457ee9903fc2639616b93925132a35ea3d6092
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   CSSSelectorConverter: 00680dc04a48b74c7a8f792928b89e9f3def9970
   FCUUID: f0cd5df92e4689b7d9d7264e2b32c588dc54c1f3
