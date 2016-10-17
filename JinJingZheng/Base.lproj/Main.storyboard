@@ -125,5 +125,55 @@
             </objects>
             <point key="canvasLocation" x="-522.39999999999998" y="55.322338830584712"/>
         </scene>
+        <!--车辆 -->
+        <scene sceneID="Oej-TX-KHh">
+            <objects>
+                <tableViewController id="J9U-f0-SzY" customClass="CarListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="248" sectionHeaderHeight="28" sectionFooterHeight="28" id="VtA-Tn-bdt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="248" id="DHS-Uz-bvp">
+                                <rect key="frame" x="0.0" y="92" width="375" height="248"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DHS-Uz-bvp" id="pMa-Gm-ODB">
+                                    <frame key="frameInset" width="375" height="247"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="J9U-f0-SzY" id="2Rd-sq-lhe"/>
+                            <outlet property="delegate" destination="J9U-f0-SzY" id="kNG-iy-n8x"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="TJc-yZ-Lcg">
+                        <string key="title" base64-UTF8="YES">
+6L2m6L6GFA
+</string>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viN-Rc-S0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="53.523238380809602"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o77-Zd-e8a">
+            <objects>
+                <navigationController storyboardIdentifier="CarListTableViewController" id="1AJ-s9-n6W" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bjb-XF-oQX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.10960444060000001" green="0.52512204650000005" blue="0.45393538480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J9U-f0-SzY" kind="relationship" relationship="rootViewController" id="W3f-EN-0Mw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OuT-wi-h7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="55"/>
+        </scene>
     </scenes>
 </document>

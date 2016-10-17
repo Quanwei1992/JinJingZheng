@@ -16,4 +16,6 @@ typedef void (^AsyncResponseHandler) (BOOL isSuccess, id data);
 
 - (void) login:(NSString *) phoneNumber andMessageCode:(NSString *)code withHandler:(AsyncResponseHandler) handler;
 
+- (void) getUserCarList:(AsyncResponseHandler) handler;
+
 @end

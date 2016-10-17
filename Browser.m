@@ -13,6 +13,8 @@
 #import "MessageCodeResult.h"
 #import "LoginResult.h"
 #import "UIDevice+FCUUID.h"
+#import "NSString+Extensions.h"
+#import "CarListResult.h"
 
 
 
@@ -53,7 +55,7 @@
         MessageCodeResult * result = [[MessageCodeResult alloc] initWithDictionary:string2dic];
         
         NSString * rescode = [result valueForKey:@"rescode"];
-
+        handler([@"200" isEqualToString:rescode], result);
         NSLog(@">>> %@", result);
     }];
 }
@@ -107,17 +109,65 @@
     
     [browser POSTWithURLString:@"https://api.accident.zhongchebaolian.com/industryguild_mobile_standard_self2.1.2/mobile/standard/login" parameters:parameters jsonBody:jsonBody requestCallback:^(BOOL isSuccess, NSString *html) {
         
+        NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
+        
+        
         NSError *error = nil;
         NSDictionary *string2dic = [NSJSONSerialization JSONObjectWithData: [html dataUsingEncoding:NSUTF8StringEncoding]
                                                                    options: NSJSONReadingMutableContainers
                                                                      error: &error];
         LoginResult * result = [[LoginResult alloc] initWithDictionary:string2dic];
         
-        //{"citycode":"","policeno":"","ssid":"MBSXZ06043979174521514069026","provincetiny":null,"accesstoken":null,"provincecode":null,"userid":"d33b849efa164c74964937761028cc20","userType":"1","ssidcode":null,"rescode":"200","resdes":"登陆成功"}
+        NSString * rescode = [result valueForKey:@"rescode"];
+        BOOL loginSuccess = [@"200" isEqualToString:rescode];
+        if (loginSuccess) {
+            [userDefault setValue:html forKey:@"loginInfo"];
+        }
         
-        NSLog(@">>> %@", html);
+        handler(loginSuccess, result);
+        NSLog(@">>> %@", result);
     }];
 
 }
 
+- (void)getUserCarList:(AsyncResponseHandler)handler{
+    NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
+    
+    NSString * html = [userDefault valueForKey:@"loginInfo"];
+    
+    NSError *error = nil;
+    NSDictionary *loginInfoDc = [NSJSONSerialization JSONObjectWithData: [html dataUsingEncoding:NSUTF8StringEncoding]
+                                                               options: NSJSONReadingMutableContainers
+                                                                 error: &error];
+
+    
+    LoginResult * loginResult = [[LoginResult alloc] initWithDictionary:loginInfoDc];
+    
+    NSString * userId = loginResult.userid;
+    NSString * sn = [userId md5HexDigest];
+    
+    NSString * url = [NSString stringWithFormat: @"https://api.accident.zhongchebaolian.com/industryguild_mobile_standard_self2.1.2/mobile/standard/getusercarlist?appkey=0791682354&dicver=0&sn=%@&userid=%@",sn, userId];
+    [browser GETWithURLString:url requestCallback:^(BOOL isSuccess, NSString *html) {
+        
+        NSError *error = nil;
+        NSDictionary *string2dic = [NSJSONSerialization JSONObjectWithData: [html dataUsingEncoding:NSUTF8StringEncoding]
+                                                                   options: NSJSONReadingMutableContainers
+                                                                     error: &error];
+        CarListResult * carList = [[CarListResult alloc] initWithDictionary:string2dic];
+        
+        NSString * rescode = carList.rescode;
+        
+        BOOL getCarListSuccess = [@"200" isEqualToString:rescode];
+        
+        if (getCarListSuccess) {
+            NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
+            [userDefault setValue:html forKey:@"carListInfo"];
+        }
+        handler(getCarListSuccess, carList);
+                    
+        
+        NSLog(@">>> %@", html);
+        
+    }];
+}
 @end

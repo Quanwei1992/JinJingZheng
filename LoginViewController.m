@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "Browser.h"
+#import "UIStoryboard+CCF.h"
 
 @interface LoginViewController (){
     Browser *browser;
@@ -47,7 +48,7 @@
 
 - (IBAction)startLogin:(id)sender {
     [browser login:self.phoneNumber.text andMessageCode:self.messageCode.text withHandler:^(BOOL isSuccess, id data) {
-        
+        [[UIStoryboard mainStoryboard] changeRootViewControllerTo:@"CarListTableViewController"];
     }];
 }
 @end
