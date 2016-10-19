@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FB83DE455B48C05CECB3A1C753EADF0AD09EE9BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "339DA669A83105C95F09B5B96CDEFBD266A056B2" : 9223372036854775807,
+    "FB83DE455B48C05CECB3A1C753EADF0AD09EE9BB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2C386662-3BF5-4351-A119-D5D00629EF64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "339DA669A83105C95F09B5B96CDEFBD266A056B2" : "ITRPassBook\/",
+    "FB83DE455B48C05CECB3A1C753EADF0AD09EE9BB" : "JinJingZheng\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JinJingZheng",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JinJingZheng.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ITechRoof\/ITRPassBook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "339DA669A83105C95F09B5B96CDEFBD266A056B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:andforce\/JinJingZheng.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB83DE455B48C05CECB3A1C753EADF0AD09EE9BB"
+    }
+  ]
+}

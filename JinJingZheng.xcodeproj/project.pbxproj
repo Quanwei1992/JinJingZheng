@@ -27,7 +27,18 @@
 		3A994C671DB34BDB0099B533 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A994C661DB34BDB0099B533 /* UIView+Corner.m */; };
 		4D8D64291DB5C0F1007407DC /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D64281DB5C0F1007407DC /* Test.m */; };
 		4D8D642B1DB5DAF5007407DC /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D642A1DB5DAF5007407DC /* bg.jpg */; };
-		4D8D64321DB63DDC007407DC /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8D64311DB63DDC007407DC /* PassKit.framework */; };
+		4D8D64341DB78E2D007407DC /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8D64331DB78E2D007407DC /* PassKit.framework */; };
+		4D8D64551DB7B4B6007407DC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D644A1DB7B4B6007407DC /* icon.png */; };
+		4D8D64561DB7B4B6007407DC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D644B1DB7B4B6007407DC /* icon@2x.png */; };
+		4D8D64571DB7B4B6007407DC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D644C1DB7B4B6007407DC /* logo.png */; };
+		4D8D64581DB7B4B6007407DC /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D644D1DB7B4B6007407DC /* logo@2x.png */; };
+		4D8D64591DB7B4B6007407DC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D644E1DB7B4B6007407DC /* manifest.json */; };
+		4D8D645A1DB7B4B6007407DC /* pass.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D644F1DB7B4B6007407DC /* pass.json */; };
+		4D8D645B1DB7B4B6007407DC /* passcertificate.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D64501DB7B4B6007407DC /* passcertificate.pem */; };
+		4D8D645C1DB7B4B6007407DC /* passkey.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D64511DB7B4B6007407DC /* passkey.pem */; };
+		4D8D645D1DB7B4B6007407DC /* signature in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D64521DB7B4B6007407DC /* signature */; };
+		4D8D645E1DB7B4B6007407DC /* WWDR.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D64531DB7B4B6007407DC /* WWDR.pem */; };
+		4D8D64621DB7B85E007407DC /* pass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 4D8D64611DB7B85E007407DC /* pass.pkpass */; };
 		4D9975AE1DB4ED3A006349C9 /* UIStoryboard+CCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9975AD1DB4ED3A006349C9 /* UIStoryboard+CCF.m */; };
 		4D9975B21DB4F27D006349C9 /* CarListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9975B11DB4F27D006349C9 /* CarListTableViewController.m */; };
 		77BB47EE0F8D5FA970D297A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86BC979E50C5743707923C7 /* libPods.a */; };
@@ -72,7 +83,18 @@
 		4D8D64281DB5C0F1007407DC /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		4D8D642A1DB5DAF5007407DC /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		4D8D642C1DB638FA007407DC /* JinJingZheng.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JinJingZheng.entitlements; sourceTree = "<group>"; };
-		4D8D64311DB63DDC007407DC /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		4D8D64331DB78E2D007407DC /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		4D8D644A1DB7B4B6007407DC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4D8D644B1DB7B4B6007407DC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		4D8D644C1DB7B4B6007407DC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		4D8D644D1DB7B4B6007407DC /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		4D8D644E1DB7B4B6007407DC /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		4D8D644F1DB7B4B6007407DC /* pass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pass.json; sourceTree = "<group>"; };
+		4D8D64501DB7B4B6007407DC /* passcertificate.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = passcertificate.pem; sourceTree = "<group>"; };
+		4D8D64511DB7B4B6007407DC /* passkey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = passkey.pem; sourceTree = "<group>"; };
+		4D8D64521DB7B4B6007407DC /* signature */ = {isa = PBXFileReference; lastKnownFileType = file; path = signature; sourceTree = "<group>"; };
+		4D8D64531DB7B4B6007407DC /* WWDR.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WWDR.pem; sourceTree = "<group>"; };
+		4D8D64611DB7B85E007407DC /* pass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; name = pass.pkpass; path = ../../../Downloads/pass.pkpass; sourceTree = "<group>"; };
 		4D9975AC1DB4ED3A006349C9 /* UIStoryboard+CCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+CCF.h"; sourceTree = "<group>"; };
 		4D9975AD1DB4ED3A006349C9 /* UIStoryboard+CCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+CCF.m"; sourceTree = "<group>"; };
 		4D9975B01DB4F27D006349C9 /* CarListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarListTableViewController.h; sourceTree = "<group>"; };
@@ -86,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D8D64321DB63DDC007407DC /* PassKit.framework in Frameworks */,
+				4D8D64341DB78E2D007407DC /* PassKit.framework in Frameworks */,
 				77BB47EE0F8D5FA970D297A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +160,8 @@
 		3A994C3E1DB34B520099B533 = {
 			isa = PBXGroup;
 			children = (
+				4D8D64611DB7B85E007407DC /* pass.pkpass */,
+				4D8D64481DB7B4B6007407DC /* boardingPass.raw */,
 				4D8D642A1DB5DAF5007407DC /* bg.jpg */,
 				4D8D64271DB5C0F1007407DC /* Test.h */,
 				4D8D64281DB5C0F1007407DC /* Test.m */,
@@ -201,10 +225,27 @@
 		49476806EF76BB559F4E0CED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D8D64311DB63DDC007407DC /* PassKit.framework */,
+				4D8D64331DB78E2D007407DC /* PassKit.framework */,
 				E86BC979E50C5743707923C7 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D8D64481DB7B4B6007407DC /* boardingPass.raw */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D644A1DB7B4B6007407DC /* icon.png */,
+				4D8D644B1DB7B4B6007407DC /* icon@2x.png */,
+				4D8D644C1DB7B4B6007407DC /* logo.png */,
+				4D8D644D1DB7B4B6007407DC /* logo@2x.png */,
+				4D8D644E1DB7B4B6007407DC /* manifest.json */,
+				4D8D644F1DB7B4B6007407DC /* pass.json */,
+				4D8D64501DB7B4B6007407DC /* passcertificate.pem */,
+				4D8D64511DB7B4B6007407DC /* passkey.pem */,
+				4D8D64521DB7B4B6007407DC /* signature */,
+				4D8D64531DB7B4B6007407DC /* WWDR.pem */,
+			);
+			path = boardingPass.raw;
 			sourceTree = "<group>";
 		};
 		4D9975AF1DB4F243006349C9 /* CarList */ = {
@@ -293,9 +334,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A994C5D1DB34B520099B533 /* LaunchScreen.storyboard in Resources */,
+				4D8D64561DB7B4B6007407DC /* icon@2x.png in Resources */,
+				4D8D645D1DB7B4B6007407DC /* signature in Resources */,
 				3A994C5A1DB34B520099B533 /* Assets.xcassets in Resources */,
+				4D8D64571DB7B4B6007407DC /* logo.png in Resources */,
 				4D8D642B1DB5DAF5007407DC /* bg.jpg in Resources */,
+				4D8D64581DB7B4B6007407DC /* logo@2x.png in Resources */,
+				4D8D645C1DB7B4B6007407DC /* passkey.pem in Resources */,
+				4D8D645B1DB7B4B6007407DC /* passcertificate.pem in Resources */,
+				4D8D64551DB7B4B6007407DC /* icon.png in Resources */,
+				4D8D64591DB7B4B6007407DC /* manifest.json in Resources */,
+				4D8D64621DB7B85E007407DC /* pass.pkpass in Resources */,
+				4D8D645A1DB7B4B6007407DC /* pass.json in Resources */,
 				3A994C551DB34B520099B533 /* Main.storyboard in Resources */,
+				4D8D645E1DB7B4B6007407DC /* WWDR.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,8 +543,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JinJingZheng/JinJingZheng.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NRHHX365ZN;
 				INFOPLIST_FILE = JinJingZheng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -508,8 +560,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JinJingZheng/JinJingZheng.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NRHHX365ZN;
 				INFOPLIST_FILE = JinJingZheng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

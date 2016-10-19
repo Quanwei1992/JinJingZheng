@@ -8,8 +8,9 @@
 
 #import "Test.h"
 #import <QuartzCore/QuartzCore.h>
+#import <PassKit/PassKit.h> 
 
-@interface Test ()
+@interface Test ()<UITableViewDataSource, PKAddPassesViewControllerDelegate>
 
 @end
 
@@ -40,10 +41,71 @@
     contributeViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     
     [self presentViewController:contributeViewController animated:YES completion:nil];
+    
+    
+    NSString* resourcePath =
+    [[NSBundle mainBundle] resourcePath];
+    
+    NSArray* passFiles = [[NSFileManager defaultManager]
+                          contentsOfDirectoryAtPath:resourcePath
+                          error:nil];
+    
+    NSString * passPath;
+    //3 loop over the resource files
+    for (NSString* passFile in passFiles) {
+        if ( [passFile hasSuffix:@".pkpass"] ) {
+            passPath = passFile;
+        }  
+    }
+    
+    if (![PKPassLibrary isPassLibraryAvailable]) {
+        [[[UIAlertView alloc] initWithTitle:@"Error"
+                                    message:@"PassKit not available"
+                                   delegate:nil
+                          cancelButtonTitle:@"Pitty"
+                          otherButtonTitles: nil] show];
+        return;
+    } else{
+        [self openPassWithName:@"pass.pkpass"];
+    }
+    
 }
 
-- (UIImage*) blur:(UIImage*)theImage
-{
+-(void)openPassWithName:(NSString*)name {
+    //2
+    NSString* passFile = [[[NSBundle mainBundle] resourcePath]
+                          stringByAppendingPathComponent: name];
+    
+    //3
+    NSData *passData = [NSData dataWithContentsOfFile:passFile];
+    
+    //4
+    NSError* error = nil;
+    PKPass *newPass = [[PKPass alloc] initWithData:passData
+                                             error:&error];
+    //5
+    if (error!=nil) {
+        [[[UIAlertView alloc] initWithTitle:@"Passes error"
+                                    message:[error
+                                             localizedDescription]
+                                   delegate:nil
+                          cancelButtonTitle:@"Ooops"
+                          otherButtonTitles: nil] show];
+        return;
+    }
+    
+    //6
+    PKAddPassesViewController *addController =
+    [[PKAddPassesViewController alloc] initWithPass:newPass];
+    
+    addController.delegate = self;
+    [self presentViewController:addController
+                       animated:YES
+                     completion:nil];
+}
+
+
+- (UIImage*) blur:(UIImage*)theImage {
     // ***********If you need re-orienting (e.g. trying to blur a photo taken from the device camera front facing camera in portrait mode)
     // theImage = [self reOrientIfNeeded:theImage];
     
