@@ -66,7 +66,7 @@
                           otherButtonTitles: nil] show];
         return;
     } else{
-        [self openPassWithName:@"pass.pkpass"];
+        [self openPassWithName:@"boardingPass.pkpass"];
     }
     
 }
